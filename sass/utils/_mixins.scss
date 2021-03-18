@@ -31,3 +31,16 @@
     font-weight: 700;
 }
 
+@mixin li-number {
+    display: inline-block;
+    background: $color-primary;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 30px;
+    color: #fff;
+    margin-left: -50px;
+    margin-right: 20px;
+}
+

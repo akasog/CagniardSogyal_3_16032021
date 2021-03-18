@@ -82,7 +82,6 @@ header {
 }
 .search_bar input {
   border-style: none;
-  width: 150px;
   background-color: #e3e3e3;
   font-family: "Roboto";
   font-weight: 700;
@@ -152,14 +151,31 @@ ul li {
   font-size: 0.8rem;
   font-weight: 700;
 }
+ul li:hover {
+  background-color: #e3e3e3;
+}
+ul li:hover label {
+  color: #9356DC;
+  opacity: 100%;
+}
 ul label {
   margin-right: 20px;
+  opacity: 50%;
 }
-
-.liste {
+ul .li_1, ul .li_2, ul .li_3 {
+  display: inline-block;
+  background: #9356DC;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  border-radius: 30px;
+  color: #fff;
   margin-left: -50px;
   margin-right: 20px;
-  background-color: #9356DC;
+}
+ul .li_2 {
+  margin-left: -60px;
 }
 
 /*# sourceMappingURL=style.css.map */
