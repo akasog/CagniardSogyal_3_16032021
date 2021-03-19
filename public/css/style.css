@@ -88,6 +88,9 @@ header {
   font-size: 0.8rem;
   padding-left: 10px;
 }
+.search_bar input:focus {
+  outline: none;
+}
 
 header h1 {
   font-family: "Roboto";
