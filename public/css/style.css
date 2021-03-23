@@ -263,4 +263,28 @@ main i:hover {
   color: #9356DC;
 }
 
+footer {
+  font-family: "Roboto";
+  background-color: #303030;
+  color: #fff;
+  height: 150px;
+  padding: 20px 0px 0px 20px;
+}
+footer h3 {
+  font-family: "Shrikhand";
+  margin-bottom: 15px;
+}
+footer li {
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+}
+footer li i {
+  font-size: 10px;
+  margin-right: 10px;
+}
+footer a {
+  color: #FFF;
+  text-decoration: none;
+}
+
 /*# sourceMappingURL=style.css.map */

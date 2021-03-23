@@ -44,3 +44,21 @@
     margin-right: 20px;
 }
 
+@mixin footer {
+    font-family: 'Roboto';
+    background-color: $bg-footer;
+    color: #fff;
+    height: 150px;
+    padding: 20px 0px 0px 20px;
+}
+
+@mixin li-footer {
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+}
+
+@mixin li-label {
+    font-size: 10px;
+    margin-right: 10px;
+}
+

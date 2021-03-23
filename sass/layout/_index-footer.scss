@@ -1,0 +1,19 @@
+footer {
+    @include footer;
+    h3{
+        font-family: 'Shrikhand';
+        margin-bottom: 15px;
+    }
+
+    li{
+        @include li-footer;
+        i {
+            @include li-label;
+        }
+    }
+
+    a {
+        color: #FFF;
+        text-decoration: none;
+    }
+}
