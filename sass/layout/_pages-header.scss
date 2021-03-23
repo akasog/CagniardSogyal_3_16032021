@@ -1,0 +1,25 @@
+/* Pages */
+
+header {
+    .logo {
+        display: flex;
+        align-items: center;
+        a {
+        text-decoration: none;
+        color: black;
+        opacity: 80%;
+        .return_arrow {
+            font-size: $large-text;
+            font-weight: $strong-text;
+            position: relative;
+            right: 70px;
+            }
+        }    
+    }
+    .meal {
+        width: 320px;
+    }
+}  
+
+
+
