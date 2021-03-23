@@ -30,7 +30,7 @@ header{
         border-style: none;
         background-color: $bg-search;
         font-family:'Roboto';
-        font-weight: 700;
+        font-weight: $strong-text;
         font-size: 0.8rem;
         padding-left: 10px;
         &:focus {
@@ -51,7 +51,7 @@ header h1 {
 header p {
     text-align: center;
     font-family: 'Roboto';
-    font-weight: 300;
+    font-weight: $light-text;
     font-size: 0.9rem;
     margin: 10px 0px 20px 0px;
 }

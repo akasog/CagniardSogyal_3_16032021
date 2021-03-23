@@ -2,44 +2,46 @@ nav {
     display: flex;
     flex-direction: column;
     font-family: 'Roboto';
-}
-
-h2{                        
-    @include h2-style;
-}
-
-
-ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    li {
-        @include li-style;
+    
+    h2{                        
+        @include h2-style;
     }
-
-    li:hover {
-        background-color: $bg-search;
-        label {
-            color: $color-primary;
-            opacity: 100%;
+    
+    
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        li {
+            @include li-style;
         }
+    
+        li:hover {
+            background-color: $bg-search;
+            label {
+                color: $color-primary;
+                opacity: 100%;
+            }
+        }
+    
+        label {
+            margin-right: 20px;
+            opacity: 50%;
+        }
+    
+        .li_1, .li_2, .li_3 {
+            @include li-number;
+        }
+    
+        .li_2 {
+            margin-left: -60px;
+        }
+    
+    
     }
-
-    label {
-        margin-right: 20px;
-        opacity: 50%;
-    }
-
-    .li_1, .li_2, .li_3 {
-        @include li-number;
-    }
-
-    .li_2 {
-        margin-left: -60px;
-    }
-
-
 }
+
+
 
 

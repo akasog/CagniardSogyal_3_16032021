@@ -28,7 +28,7 @@
     border-radius: 20px;
     box-shadow: 0px 2px 10px $box-shadow;
     font-size: 0.8rem;
-    font-weight: 700;
+    font-weight: $strong-text;
 }
 
 @mixin li-number {

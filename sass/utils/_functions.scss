@@ -1,0 +1,5 @@
+@function darken-new($color-tertiary){
+    @if ( lightnen($color-tertiary)>25%) {
+        $color-tertiary: darken($color-tertiary,20%);
+    }
+}
