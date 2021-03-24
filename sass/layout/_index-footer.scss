@@ -1,14 +1,20 @@
 footer {
-    @include footer;
+    font-family: $text-typo;
+    background-color: $bg-footer;
+    color: #fff;
+    height: 140px;
+    padding: 20px 0px 0px 20px;
     h3{
-        font-family: 'Shrikhand';
+        font-family: $logo-typo;
         margin-bottom: 15px;
     }
 
     li{
-        @include li-footer;
+        font-size: $medium;
+        margin-bottom: 12px;
         i {
-            @include li-label;
+            font-size: $small;
+            margin-right: 10px;
         }
     }
 
