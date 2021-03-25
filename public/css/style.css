@@ -379,6 +379,11 @@ main .order_btn a {
 }
 
 @media screen and (min-width: 768px) {
+  body {
+    width: 768px;
+    margin: auto;
+  }
+
   nav {
     margin-top: -20;
   }
@@ -386,6 +391,7 @@ main .order_btn a {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-bottom: 80px;
   }
   nav ul li {
     width: 200px;
@@ -406,10 +412,33 @@ main .order_btn a {
     margin-left: -13px;
     margin-right: -5px;
   }
-  nav main {
+
+  main {
+    height: 100% px;
+  }
+  main section {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  main section h2 {
+    margin-top: -50px;
+  }
+  main section .palette-du-gout {
+    margin-left: -100px;
+    margin-right: 20px;
+  }
+  main section .la-note {
+    margin-right: 30px;
+    margin-left: 50px;
+  }
+  main section .new1 {
+    top: 20px;
+    left: 250px;
+  }
+  main section .new2 {
+    top: 20px;
+    left: 640px;
   }
 }
 header .meal {

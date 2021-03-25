@@ -1,12 +1,15 @@
 @media screen and (min-width: map-get($breakpoints, tablet)) {
-
+    body {
+        width: 768px;
+        margin: auto;
+    }
     nav {
         margin-top: -20;
         ul {
             display: flex;
             flex-direction: row;
             justify-content: space-around;
-            ;
+            margin-bottom: 80px;
             li {
                 width: 200px;
                 padding-right: 20px;
@@ -27,13 +30,37 @@
                 }
             }
         }
-
-    main {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
     }
 
+    main {
+        
+        height: 100%px;
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            h2 {
+                margin-top: -50px;
+            }
+            .palette-du-gout {
+                margin-left: -100px;
+                margin-right: 20px;
+            }
+            .la-note{
+                margin-right: 30px;
+                margin-left: 50px;
+            }
+
+            .new1 {
+                top: 20px;
+                left: 250px;
+            }
+            
+            .new2 {
+                top: 20px;
+                left: 640px;
+            }
+        }
     }
 
 
