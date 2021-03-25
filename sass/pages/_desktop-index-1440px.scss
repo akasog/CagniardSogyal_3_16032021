@@ -1,0 +1,62 @@
+@media screen and (min-width: map-get($breakpoints, desktop)) {
+    body {
+        width: 1440px;
+        margin: auto;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        h2 {
+            margin-bottom: 30px;
+            margin-left: 0px;
+        }
+        
+        ul {
+            margin-left: -70px;
+        }
+        li {
+            margin-left: 80px;
+        }
+    }
+
+    main {
+        margin-left: 100px;
+        h2 {
+            position: absolute;
+        }
+        section {
+            display: flex;
+            align-content: flex-start;
+            margin-left: 150px;
+
+        .francaise, .palette-du-gout, .la-note, .delice {
+            display: flex;
+            margin: auto;
+            margin-left: 70px;
+            margin-top: 20px;
+
+        } 
+
+        .palette-du-gout {
+            margin-left: 0px;
+        }
+
+        .new2 {
+            left: 610px;
+            top: 40px;
+        }
+
+        .new1 {
+            left: 260px;
+            top: 40px;
+        }
+        }
+    }
+
+    footer {
+        margin-top: 30px;
+        height: 95px;
+    }
+
+}

@@ -1,0 +1,26 @@
+@media screen and (min-width: map-get($breakpoints, desktop)) {
+    body {
+        width: 1440px;
+        margin: auto;
+    }
+
+    header {
+        .meal {
+            width: 1440px;
+            object-fit: contain;
+        }
+    }
+
+    main {
+        width: 100%;
+        margin: auto;
+        .heart {
+            margin-right: 576px;
+        }
+
+        section {
+            margin: auto;
+        }
+    }
+
+    }
