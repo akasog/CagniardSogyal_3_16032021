@@ -179,6 +179,11 @@ nav ul .li_2 {
   margin-left: -60px;
 }
 
+body {
+  width: 320px;
+  margin: auto;
+}
+
 main {
   background-color: #f2f2f2;
   font-family: "Roboto";
@@ -413,9 +418,6 @@ main .order_btn a {
     margin-right: -5px;
   }
 
-  main {
-    height: 100% px;
-  }
   main section {
     display: flex;
     flex-wrap: wrap;
@@ -439,6 +441,37 @@ main .order_btn a {
   main section .new2 {
     top: 20px;
     left: 640px;
+  }
+
+  footer {
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  footer h3 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  footer ul {
+    display: flex;
+    justify-content: center;
+  }
+  footer ul li {
+    padding-right: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  header .meal {
+    width: 768px;
+  }
+
+  main .starter, main .main, main .dessert {
+    display: flex;
+    flex-direction: column;
+  }
+  main .heart {
+    margin-right: 240px;
   }
 }
 header .meal {

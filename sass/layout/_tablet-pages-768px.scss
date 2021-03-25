@@ -1,0 +1,19 @@
+@media screen and (min-width: map-get($breakpoints, tablet)) {
+
+    header {
+        .meal {
+            width: 768px;
+        }
+    }
+    
+    main {
+        .starter, .main, .dessert {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .heart {
+        margin-right: 240px;
+    }
+    }
+    }
