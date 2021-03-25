@@ -52,6 +52,9 @@ table {
   border-spacing: 0;
 }
 
+/* Background colors*/
+/*Text styles*/
+/*Breakpoint*/
 /*HEADER*/
 header {
   display: flex;
@@ -184,11 +187,12 @@ main {
   align-items: center;
 }
 main h2 {
-  align-self: flex-start;
-  padding-top: 15px;
   font-weight: 800;
   font-size: 1.1rem;
   margin: 30px 0px 20px 20px;
+  align-self: flex-start;
+  padding-top: 15px;
+  margin-left: 0px;
 }
 main div {
   background-color: #FFF;
@@ -196,8 +200,7 @@ main div {
   width: 280px;
   border-radius: 15px;
 }
-main .new1 {
-  display: block;
+main .new1, main .new2 {
   text-align: center;
   line-height: 20px;
   position: absolute;
@@ -207,21 +210,12 @@ main .new1 {
   top: 100px;
   font-size: 0.7rem;
   font-weight: 700;
-  color: #03a37c;
+  color: #2c9c81;
   background-color: #99E2D0;
 }
 main .new2 {
-  display: block;
-  text-align: center;
-  line-height: 20px;
-  position: absolute;
-  width: 60px;
   left: 230px;
   top: 345px;
-  font-size: 0.7rem;
-  font-weight: 700;
-  color: #03a37c;
-  background-color: #99E2D0;
 }
 main img {
   width: 280px;
@@ -256,7 +250,9 @@ main i {
   position: absolute;
 }
 main i:hover {
-  color: #9356DC;
+  background: linear-gradient(to top, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-weight: bold;
 }
 
@@ -288,6 +284,7 @@ footer a {
 header .logo {
   display: flex;
   align-items: center;
+  margin-right: 15px;
 }
 header .logo a {
   text-decoration: none;
@@ -298,7 +295,7 @@ header .logo a .return_arrow {
   font-size: 1.1rem;
   font-weight: 700;
   position: relative;
-  right: 70px;
+  right: 60px;
 }
 header .meal {
   width: 320px;
@@ -317,7 +314,7 @@ main {
 main h1 {
   font-family: "Shrikhand";
   font-size: 1.5rem;
-  margin: 30px 50px 30px 0px;
+  margin: 30px 40px 30px 0px;
 }
 main .heart {
   margin-top: 32px;
@@ -326,10 +323,7 @@ main .heart {
 main .heart:hover {
   color: #9356DC;
 }
-main .starter, main .main, main .dessert {
-  margin: 0px 0px 0px 0px;
-}
-main .starter p, main .main p, main .dessert p {
+main .starter h3, main .main h3, main .dessert h3 {
   text-transform: uppercase;
   margin-bottom: 15px;
   border-bottom: 2px solid #99E2D0;
@@ -353,6 +347,12 @@ main .starter ul li, main .main ul li, main .dessert ul li {
   box-shadow: 0px 2px 10px #cfcfcf;
   font-size: 1rem;
   font-weight: 700;
+}
+main .starter ul li:hover, main .main ul li:hover, main .dessert ul li:hover {
+  box-shadow: 5px 5px 5px #e3e3e3;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transform: scale(1.02);
 }
 main .starter ul span, main .main ul span, main .dessert ul span {
   display: flex;

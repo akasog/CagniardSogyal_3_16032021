@@ -4,6 +4,7 @@ header {
     .logo {
         display: flex;
         align-items: center;
+        margin-right: 15px;
         a {
         text-decoration: none;
         color: black;
@@ -12,7 +13,7 @@ header {
             font-size: $large;
             font-weight: $strong-text;
             position: relative;
-            right: 70px;
+            right: 60px;
             }
         }    
     }

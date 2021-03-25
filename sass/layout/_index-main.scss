@@ -5,9 +5,10 @@ main {
     align-items: center;
     
     h2{
+        @include h2-style;
         align-self: flex-start;
         padding-top: 15px;
-        @include h2-style;
+        margin-left: 0px;
     }
 
     div {
@@ -17,8 +18,7 @@ main {
         border-radius: 15px;
     }
 
-    .new1 {
-        display: block;
+    .new1, .new2 {
         text-align: center;
         line-height: 20px;
         position: absolute;
@@ -28,23 +28,13 @@ main {
         top: 100px;
         font-size: $new-size;
         font-weight: $strong-text;
-        color: $new-darken;
+        color: darken($color: $color-tertiary, $amount: 35);
         background-color: $color-tertiary;
     }
 
     .new2 {
-        display: block;
-        text-align: center;
-        line-height: 20px;
-        position: absolute;
-        width: 60px;
         left: 230px;
         top: 345px;
-        font-size: $new-size;
-        font-weight: $strong-text;
-        color: $new-darken;
-        background-color: $color-tertiary;
-        
     }
 
     img {
@@ -83,8 +73,10 @@ main {
         align-self: flex-end;
         position: absolute;
         &:hover {
-            color: $color-primary;
+            background: linear-gradient(to top,$color-secondary, $color-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
             font-weight: bold;
-        }
+                }
     }
 }
