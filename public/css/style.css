@@ -378,6 +378,40 @@ main .order_btn a {
   line-height: 40px;
 }
 
+@media screen and (min-width: 768px) {
+  nav {
+    margin-top: -20;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  nav ul li {
+    width: 200px;
+    padding-right: 20px;
+  }
+  nav ul li label {
+    margin-left: 15px;
+  }
+  nav ul li .li_2 {
+    margin-left: -20px;
+    margin-right: -5px;
+  }
+  nav ul li .li_1 {
+    margin-left: -15px;
+    margin-right: -5px;
+  }
+  nav ul li .li_3 {
+    margin-left: -13px;
+    margin-right: -5px;
+  }
+  nav main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
 header .meal {
   object-fit: cover;
   height: 200px;

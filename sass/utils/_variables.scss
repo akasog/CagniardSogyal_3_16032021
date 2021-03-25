@@ -29,9 +29,5 @@ $new-darken: #03a37c;
 
 /*Breakpoint*/ 
 
-$mobile-first: 320px;
-
-$breakpoint-tablet: 768px;
-
-$breakpoint-desktop: 1440px;
+$breakpoints: (mobile: 320px, tablet: 768px, desktop: 1440px);
 
