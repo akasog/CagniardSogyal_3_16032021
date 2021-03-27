@@ -4,11 +4,15 @@
         margin: auto;
     }
     nav {
-        margin-top: -20;
+        h2 {
+            margin-left: 25px;
+        }
         ul {
+            width: 720px;
             display: flex;
             flex-direction: row;
             justify-content: space-around;
+            margin-left: 25px;
             margin-bottom: 80px;
             li {
                 width: 200px;
@@ -38,25 +42,34 @@
             flex-wrap: wrap;
             justify-content: space-around;
             h2 {
-                margin-top: -50px;
+                margin-top: -55px;
+                margin-left: 25px;
+            }
+
+            div {
+                width: 330px;
+                margin-bottom: 50px;
+                img {
+                    width: 330px;
+                }
             }
             .palette-du-gout {
-                margin-left: -100px;
+                margin-left: -95px;
                 margin-right: 20px;
             }
             .la-note{
                 margin-right: 30px;
-                margin-left: 50px;
+                margin-left: 30px;
             }
 
             .new1 {
                 top: 20px;
-                left: 250px;
+                left: 280px;
             }
             
             .new2 {
                 top: 20px;
-                left: 640px;
+                left: 660px;
             }
             }   
         }

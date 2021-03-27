@@ -353,12 +353,6 @@ main .starter ul li, main .main ul li, main .dessert ul li {
   font-size: 1rem;
   font-weight: 700;
 }
-main .starter ul li:hover, main .main ul li:hover, main .dessert ul li:hover {
-  box-shadow: 5px 5px 5px #e3e3e3;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -webkit-transform: scale(1.02);
-}
 main .starter ul span, main .main ul span, main .dessert ul span {
   display: flex;
   justify-content: space-between;
@@ -389,13 +383,15 @@ main .order_btn a {
     margin: auto;
   }
 
-  nav {
-    margin-top: -20;
+  nav h2 {
+    margin-left: 25px;
   }
   nav ul {
+    width: 720px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-left: 25px;
     margin-bottom: 80px;
   }
   nav ul li {
@@ -424,23 +420,31 @@ main .order_btn a {
     justify-content: space-around;
   }
   main section h2 {
-    margin-top: -50px;
+    margin-top: -55px;
+    margin-left: 25px;
+  }
+  main section div {
+    width: 330px;
+    margin-bottom: 50px;
+  }
+  main section div img {
+    width: 330px;
   }
   main section .palette-du-gout {
-    margin-left: -100px;
+    margin-left: -95px;
     margin-right: 20px;
   }
   main section .la-note {
     margin-right: 30px;
-    margin-left: 50px;
+    margin-left: 30px;
   }
   main section .new1 {
     top: 20px;
-    left: 250px;
+    left: 280px;
   }
   main section .new2 {
     top: 20px;
-    left: 640px;
+    left: 660px;
   }
 
   footer {
@@ -483,12 +487,14 @@ main .order_btn a {
   nav {
     display: flex;
     align-items: center;
+    margin-bottom: 40px;
   }
   nav h2 {
     margin-bottom: 30px;
     margin-left: 0px;
   }
   nav ul {
+    width: 1000px;
     margin-left: -70px;
   }
   nav li {
@@ -496,37 +502,31 @@ main .order_btn a {
   }
 
   main {
-    margin-left: 100px;
+    display: flex;
+    padding-left: 70px;
   }
-  main h2 {
+  main section h2 {
     position: absolute;
+    margin-left: -140px;
   }
-  main section {
-    display: flex;
-    align-content: flex-start;
-    margin-left: 150px;
+  main section div {
+    width: 300px;
+    margin-right: 50px;
+    margin-top: 10px;
   }
-  main section .francaise, main section .palette-du-gout, main section .la-note, main section .delice {
-    display: flex;
-    margin: auto;
-    margin-left: 70px;
-    margin-top: 20px;
+  main section div img {
+    width: 300px;
   }
-  main section .palette-du-gout {
-    margin-left: 0px;
-  }
-  main section .new2 {
-    left: 610px;
-    top: 40px;
+  main section .la-note {
+    margin-right: 50px;
   }
   main section .new1 {
-    left: 260px;
-    top: 40px;
+    left: 270px;
+    top: 30px;
   }
-
-  footer {
-    margin-top: 30px;
-    height: 95px;
+  main section .new2 {
+    left: 620px;
+    top: 30px;
   }
 }
 @media screen and (min-width: 1440px) {
