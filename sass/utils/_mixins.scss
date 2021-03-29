@@ -22,3 +22,27 @@
     border-radius: 30px;
     text-align: center;
 }
+
+@mixin btn-style {
+        position: absolute;
+        background-color: #fff;
+        font-size: 1.3rem;
+        border: none;
+    }
+
+@mixin btn-focus {
+    background-color: #fff;
+    outline: none;
+    border: none;
+    background: linear-gradient(to top,$color-secondary, $color-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    }
+
+@mixin btn-hover {
+    background: linear-gradient(to top,$color-secondary, $color-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}

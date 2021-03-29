@@ -190,6 +190,18 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* i {
+       font-size: 1.3rem;
+       margin-right: 15px;
+       align-self: flex-end;
+       position: absolute;
+       &:hover {
+           background: linear-gradient(to top,$color-secondary, $color-primary);
+           -webkit-background-clip: text;
+           -webkit-text-fill-color: transparent;
+           font-weight: bold;
+               }
+   } */
 }
 main h2 {
   font-weight: 800;
@@ -248,17 +260,40 @@ main span {
   font-weight: 700;
   margin-bottom: 5px;
 }
-main i {
-  font-size: 1.3rem;
-  margin-right: 15px;
-  align-self: flex-end;
+main .btn1, main .btn2, main .btn3, main .btn4 {
   position: absolute;
+  background-color: #fff;
+  font-size: 1.3rem;
+  border: none;
+  top: 260px;
+  left: 250px;
 }
-main i:hover {
+main .btn1:focus, main .btn2:focus, main .btn3:focus, main .btn4:focus {
+  background-color: #fff;
+  outline: none;
+  border: none;
   background: linear-gradient(to top, #FF79DA, #9356DC);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
+}
+main .btn1:hover, main .btn2:hover, main .btn3:hover, main .btn4:hover {
+  background: linear-gradient(to top, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+main .btn1:active, main .btn2:active, main .btn3:active, main .btn4:active {
+  background-color: #fff;
+}
+main .btn2 {
+  top: 505px;
+}
+main .btn3 {
+  top: 750px;
+}
+main .btn4 {
+  top: 990px;
 }
 
 footer {
@@ -321,12 +356,32 @@ main h1 {
   font-size: 1.5rem;
   margin: 30px 40px 30px 0px;
 }
-main .heart {
-  margin-top: 32px;
-  margin-right: 30px;
+main .btn-pages {
+  position: absolute;
+  background-color: #fff;
+  font-size: 1.3rem;
+  border: none;
+  background-color: #f2f2f2;
+  top: 30px;
+  left: 260px;
 }
-main .heart:hover {
-  color: #9356DC;
+main .btn-pages:hover {
+  background: linear-gradient(to top, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+main .btn-pages:focus {
+  background-color: #fff;
+  outline: none;
+  border: none;
+  background: linear-gradient(to top, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+main .btn-pages:active {
+  background-color: #f2f2f2;
 }
 main .starter h3, main .main h3, main .dessert h3 {
   text-transform: uppercase;
@@ -334,6 +389,16 @@ main .starter h3, main .main h3, main .dessert h3 {
   border-bottom: 2px solid #99E2D0;
   width: 40px;
   padding-bottom: 5px;
+}
+main .starter button, main .main button, main .dessert button {
+  outline: none;
+  border: none;
+  background-color: #fff;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 1rem;
+  text-align: left;
+  margin-left: -5px;
 }
 main .starter ul, main .main ul, main .dessert ul {
   margin-bottom: 30px;
@@ -353,6 +418,9 @@ main .starter ul li, main .main ul li, main .dessert ul li {
   font-size: 1rem;
   font-weight: 700;
 }
+main .starter ul li:hover, main .main ul li:hover, main .dessert ul li:hover {
+  box-shadow: 5px 2px 10px #cfcfcf;
+}
 main .starter ul span, main .main ul span, main .dessert ul span {
   display: flex;
   justify-content: space-between;
@@ -361,6 +429,7 @@ main .starter ul span, main .main ul span, main .dessert ul span {
 }
 main .starter ul span strong, main .main ul span strong, main .dessert ul span strong {
   font-weight: 700;
+  margin-right: -10px;
 }
 main .order_btn {
   margin-bottom: 30px;
@@ -446,6 +515,22 @@ main .order_btn a {
     top: 20px;
     left: 660px;
   }
+  main section .btn1 {
+    top: 180px;
+    left: 300px;
+  }
+  main section .btn2 {
+    top: 180px;
+    left: 680px;
+  }
+  main section .btn3 {
+    top: 450px;
+    left: 300px;
+  }
+  main section .btn4 {
+    top: 450px;
+    left: 680px;
+  }
 
   footer {
     height: 80px;
@@ -469,13 +554,18 @@ main .order_btn a {
   header .meal {
     width: 768px;
   }
+  header .return_arrow {
+    position: absolute;
+    left: -280px;
+  }
 
   main .starter, main .main, main .dessert {
     display: flex;
     flex-direction: column;
   }
-  main .heart {
-    margin-right: 240px;
+  main .btn-pages {
+    top: 30px;
+    left: 485px;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -528,6 +618,33 @@ main .order_btn a {
     left: 620px;
     top: 30px;
   }
+  main section i {
+    font-size: 1.3rem;
+    margin-right: 15px;
+    align-self: flex-end;
+    position: absolute;
+  }
+  main section i:hover {
+    background: linear-gradient(to top, #FF79DA, #9356DC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+  }
+  main section .btn1 {
+    top: 190px;
+  }
+  main section .btn2 {
+    top: 190px;
+    left: 650px;
+  }
+  main section .btn3 {
+    top: 190px;
+    left: 1000px;
+  }
+  main section .btn4 {
+    top: 190px;
+    left: 1350px;
+  }
 }
 @media screen and (min-width: 1440px) {
   body {
@@ -539,16 +656,32 @@ main .order_btn a {
     width: 1440px;
     object-fit: contain;
   }
+  header .return_arrow {
+    position: absolute;
+    left: -600px;
+  }
 
   main {
     width: 100%;
     margin: auto;
   }
-  main .heart {
-    margin-right: 576px;
+  main .btn-pages {
+    left: 840px;
   }
-  main section {
-    margin: auto;
+  main h1, main .starter, main .main, main .dessert, main .order_btn {
+    margin-left: -120px;
+  }
+  main i {
+    font-size: 1.3rem;
+    margin-right: 15px;
+    align-self: flex-end;
+    position: absolute;
+  }
+  main i:hover {
+    background: linear-gradient(to top, #FF79DA, #9356DC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
   }
 }
 header .meal {

@@ -9,18 +9,34 @@
             width: 1440px;
             object-fit: contain;
         }
+        .return_arrow {
+            position: absolute;
+            left: -600px;
+        }
     }
 
     main {
         width: 100%;
         margin: auto;
-        .heart {
-            margin-right: 576px;
+        .btn-pages {
+            left: 840px
         }
 
-        section {
-            margin: auto;
+        h1, .starter, .main, .dessert, .order_btn {
+            margin-left: -120px;
         }
+        i {
+        font-size: 1.3rem;
+        margin-right: 15px;
+        align-self: flex-end;
+        position: absolute;
+        &:hover {
+            background: linear-gradient(to top,$color-secondary, $color-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
+                }
+    }
     }
 
     }

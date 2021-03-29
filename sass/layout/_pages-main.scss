@@ -7,18 +7,28 @@ main {
     bottom: 40px;
     border-radius: 30px 30px 0px 0px;
     background-color: $bg-color;
+    
     h1 {
         font-family: $logo-typo;
         font-size: 1.5rem;
         margin: 30px 40px 30px 0px;
     }
-    .heart{
-        margin-top: 32px;
-        margin-right: 30px;
+    
+    .btn-pages {
+        @include btn-style;
+        background-color: $bg-color;
+        top: 30px;
+        left: 260px;
         &:hover {
-            color: $color-primary;
+            @include btn-hover
         }
-    } 
+        &:focus {
+            @include btn-focus
+        }
+        &:active {
+            background-color: $bg-color;
+        }
+    }
 
     .starter, .main, .dessert {
         h3 {
@@ -27,6 +37,17 @@ main {
             border-bottom: 2px solid $color-tertiary;
             width: 40px;
             padding-bottom: 5px;
+        }
+        
+        button {
+            outline: none;
+            border: none;
+            background-color: #fff;
+            font-family: $text-typo;
+            font-weight: $strong-text;
+            font-size: 1rem;
+            text-align: left;
+            margin-left: -5px;
         }
 
         ul {
@@ -44,6 +65,9 @@ main {
                 box-shadow: 0px 2px 10px $box-shadow;
                 font-size: 1rem;
                 font-weight: $strong-text;
+                &:hover {
+                    box-shadow: 5px 2px 10px $box-shadow;
+                }
                 }
             span {
                 display: flex;
@@ -52,6 +76,7 @@ main {
                 font-size: $medium;
                 strong {
                     font-weight: $strong-text;
+                    margin-right: -10px
                 }
             }
         }

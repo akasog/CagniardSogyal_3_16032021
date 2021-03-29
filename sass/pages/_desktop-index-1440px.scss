@@ -54,6 +54,39 @@
                 left: 620px;
                 top: 30px;
             }
+
+            i {
+        font-size: 1.3rem;
+        margin-right: 15px;
+        align-self: flex-end;
+        position: absolute;
+        &:hover {
+            background: linear-gradient(to top,$color-secondary, $color-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
+                }
+    }
+
+            .btn1 {
+                top: 190px;
+
+            }
+
+            .btn2 {
+                top: 190px;
+                left: 650px;
+            }
+
+            .btn3 {
+                top: 190px;
+                left: 1000px;
+            }
+
+            .btn4 {
+                top: 190px;
+                left: 1350px;
+            }
         }
     }
 
