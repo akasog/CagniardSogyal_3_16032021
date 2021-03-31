@@ -2,7 +2,7 @@ body {
     width: 320px;
     margin: auto;
 }
-
+  
 main {
     background-color: $bg-color;
     font-family: $text-typo;
@@ -89,10 +89,13 @@ main {
         top: 260px;
         left: 250px;
         &:focus {
-            @include btn-focus;
-        }
-         &:hover {
-             @include btn-hover;
+            background-color: #fff;
+            outline: none;
+            border: none;
+            background: linear-gradient(to top,$color-secondary, $color-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
         }
 
         &:active {
