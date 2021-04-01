@@ -376,23 +376,13 @@ main .starter h3, main .main h3, main .dessert h3 {
   width: 40px;
   padding-bottom: 5px;
 }
-main .starter button, main .main button, main .dessert button {
-  outline: none;
-  border: none;
-  background-color: #fff;
-  font-family: "Roboto";
-  font-weight: 700;
-  font-size: 1rem;
-  text-align: left;
-  margin-left: -5px;
-}
 main .starter ul, main .main ul, main .dessert ul {
   margin-bottom: 30px;
 }
 main .starter ul li, main .main ul li, main .dessert ul li {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  overflow: hidden;
   background-color: #fff;
   margin-bottom: 15px;
   padding: 10px 15px 0px 10px;
@@ -403,22 +393,69 @@ main .starter ul li, main .main ul li, main .dessert ul li {
   box-shadow: 0px 2px 10px #cfcfcf;
   font-size: 1rem;
   font-weight: 700;
-  transform: scaleX(1);
 }
-main .starter ul li:hover, main .main ul li:hover, main .dessert ul li:hover {
-  transform: scale(1.02);
-  -webkit-transition: all 0.1s ease-in-out;
-  -moz-transition: all 0.1s ease-in-out;
+main .starter ul li div, main .main ul li div, main .dessert ul li div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 290px;
+  margin-top: -50px;
+  border-radius: 0px 15px 15px 0px;
+  width: 30px;
+  height: 60px;
+  color: #fff;
+  background-color: #99E2D0;
 }
-main .starter ul span, main .main ul span, main .dessert ul span {
+main .starter ul li button, main .main ul li button, main .dessert ul li button {
+  outline: none;
+  border: none;
+  height: 45px;
+  background-color: #fff;
+  font-family: "Roboto";
+  font-weight: 700;
+  text-align: left;
+  margin-left: -5px;
+  font-size: 1rem;
+}
+main .starter ul li i, main .main ul li i, main .dessert ul li i {
+  transition: 300ms;
+}
+main .starter ul li span, main .main ul li span, main .dessert ul li span {
   display: flex;
   justify-content: space-between;
   font-weight: 300;
   font-size: 0.8rem;
 }
-main .starter ul span strong, main .main ul span strong, main .dessert ul span strong {
+main .starter ul li span strong, main .main ul li span strong, main .dessert ul li span strong {
   font-weight: 700;
   margin-right: -10px;
+}
+main .starter ul li:hover, main .main ul li:hover, main .dessert ul li:hover {
+  overflow: visible;
+}
+main .starter ul li:hover div, main .main ul li:hover div, main .dessert ul li:hover div {
+  margin-left: 255px;
+  animation: slideleft 300ms both ease-in-out;
+}
+main .starter ul li:hover div i, main .main ul li:hover div i, main .dessert ul li:hover div i {
+  transform: rotate(360deg);
+}
+main .starter ul li:hover strong, main .main ul li:hover strong, main .dessert ul li:hover strong {
+  margin-right: 40px;
+  transition: 300ms ease-in-out;
+}
+main .starter ul li:hover span, main .main ul li:hover span, main .dessert ul li:hover span {
+  overflow: hidden;
+  height: 15px;
+  width: 250px;
+}
+@keyframes slideleft {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 50px;
+  }
 }
 main .order_btn {
   margin-bottom: 30px;
