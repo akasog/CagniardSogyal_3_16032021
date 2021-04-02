@@ -1,6 +1,5 @@
 @media screen and (min-width: map-get($breakpoints, desktop)) {
     body {
-        width: 1440px;
         margin: auto;
     }
 
@@ -16,15 +15,44 @@
     }
 
     main {
-        width: 100%;
-        margin: auto;
-        .btn-pages {
-            left: 840px
+        display: flex;
+        flex-direction: column;
+        padding: 0px 150px 0px 150px;
+        margin-left: -150px;
+
+        h1 {
+        margin-left: -430px;
         }
 
-        h1, .starter, .main, .dessert, .order_btn {
-            margin-left: -120px;
+        .btn-pages {
+            position: absolute;
+            margin-top: 20px;
+            right: 360px;
         }
+
+        ul {
+            li {
+                width: 700px;
+                i {
+                    font-size: 1em;
+                    margin-left: 10px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        .order_btn {
+            margin-left: -20px;
+        }
+
+    }
+
+
+    footer {
+        height: 150px;
+    }
+
+    /* main {
         i {
         font-size: 1.3rem;
         margin-right: 15px;
@@ -37,6 +65,6 @@
             font-weight: bold;
                 }
     }
-    }
+    } */
 
     }

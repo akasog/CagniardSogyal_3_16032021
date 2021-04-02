@@ -391,12 +391,25 @@ main .starter ul li button, main .main ul li button, main .dessert ul li button 
   margin-left: -5px;
   font-size: 1rem;
 }
-main .starter ul li button .checkmark, main .starter ul li button .checkmark2, main .main ul li button .checkmark, main .main ul li button .checkmark2, main .dessert ul li button .checkmark, main .dessert ul li button .checkmark2 {
+main .starter ul li button .checkmark, main .main ul li button .checkmark, main .dessert ul li button .checkmark {
   display: flex;
   justify-content: center;
   align-items: center;
   float: right;
-  margin-right: -80px;
+  margin-right: -15000px;
+  margin-top: -50px;
+  background-color: #99E2D0;
+  color: #fff;
+  border-radius: 0px 15px 15px 0px;
+  height: 61px;
+  width: 50px;
+}
+main .starter ul li button .checkmark2, main .main ul li button .checkmark2, main .dessert ul li button .checkmark2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: right;
+  margin-right: -15000px;
   margin-top: -50px;
   background-color: #99E2D0;
   color: #fff;
@@ -431,6 +444,7 @@ main .starter ul li .name, main .main ul li .name, main .dessert ul li .name {
   font-size: 1rem;
 }
 main .starter ul li:hover, main .main ul li:hover, main .dessert ul li:hover {
+  box-shadow: #cfcfcf;
   overflow: visible;
 }
 main .starter ul li:hover .checkmark, main .main ul li:hover .checkmark, main .dessert ul li:hover .checkmark {
@@ -561,7 +575,6 @@ main .dessert li {
 
 @media screen and (min-width: 768px) {
   body {
-    width: 768px;
     margin: auto;
   }
 
@@ -610,15 +623,15 @@ main .dessert li {
     margin-bottom: 50px;
   }
   main section div img {
-    width: 330px;
+    width: 100%;
   }
   main section .palette-du-gout {
-    margin-left: -95px;
+    margin-left: -125px;
     margin-right: 21px;
   }
   main section .la-note {
-    margin-right: 30px;
-    margin-left: 30px;
+    margin-right: 15px;
+    margin-left: 0px;
   }
   main section .new1 {
     top: 20px;
@@ -672,18 +685,35 @@ main .dessert li {
     left: -280px;
   }
 
+  main h1 {
+    margin-left: 150px;
+  }
+  main h3 {
+    margin-left: 150px;
+  }
   main .starter, main .main, main .dessert {
     display: flex;
     flex-direction: column;
   }
+  main .starter ul, main .main ul, main .dessert ul {
+    padding: 0px 150px 0px 150px;
+  }
+  main .starter ul li:hover .susp, main .starter ul li:hover .suspension, main .main ul li:hover .susp, main .main ul li:hover .suspension, main .dessert ul li:hover .susp, main .dessert ul li:hover .suspension {
+    display: none;
+  }
+  main .starter ul li:hover .name, main .main ul li:hover .name, main .dessert ul li:hover .name {
+    overflow: visible;
+    width: 300px;
+  }
   main .btn-pages {
-    top: 30px;
-    left: 485px;
+    margin-right: 150px;
+  }
+  main .order_btn {
+    margin-left: 300px;
   }
 }
 @media screen and (min-width: 1440px) {
   body {
-    width: 1440px;
     margin: auto;
   }
 
@@ -706,29 +736,34 @@ main .dessert li {
 
   main {
     display: flex;
-    padding-left: 70px;
+    padding-left: 165px;
+    margin-right: -150px;
   }
   main section h2 {
     position: absolute;
-    margin-left: -140px;
+    margin-left: 0px;
   }
   main section div {
     width: 300px;
-    margin-right: 50px;
+    margin-right: 30px;
     margin-top: 10px;
   }
   main section div img {
     width: 300px;
   }
   main section .la-note {
-    margin-right: 50px;
+    margin-right: 30px;
+    margin-left: 10px;
+  }
+  main section .palette-du-gout {
+    margin-left: 30px;
   }
   main section .new1 {
-    left: 270px;
+    left: 450px;
     top: 30px;
   }
   main section .new2 {
-    left: 620px;
+    left: 780px;
     top: 30px;
   }
   main section i {
@@ -745,23 +780,23 @@ main .dessert li {
   }
   main section .btn1 {
     top: 190px;
+    left: 480px;
   }
   main section .btn2 {
     top: 190px;
-    left: 650px;
+    left: 810px;
   }
   main section .btn3 {
     top: 190px;
-    left: 1000px;
+    left: 1140px;
   }
   main section .btn4 {
     top: 190px;
-    left: 1350px;
+    left: 1470px;
   }
 }
 @media screen and (min-width: 1440px) {
   body {
-    width: 1440px;
     margin: auto;
   }
 
@@ -775,27 +810,49 @@ main .dessert li {
   }
 
   main {
-    width: 100%;
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 150px 0px 150px;
+    margin-left: -150px;
+  }
+  main h1 {
+    margin-left: -430px;
   }
   main .btn-pages {
-    left: 840px;
-  }
-  main h1, main .starter, main .main, main .dessert, main .order_btn {
-    margin-left: -120px;
-  }
-  main i {
-    font-size: 1.3rem;
-    margin-right: 15px;
-    align-self: flex-end;
     position: absolute;
+    margin-top: 20px;
+    right: 360px;
   }
-  main i:hover {
-    background: linear-gradient(to top, #FF79DA, #9356DC);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: bold;
+  main ul li {
+    width: 700px;
   }
+  main ul li i {
+    font-size: 1em;
+    margin-left: 10px;
+    margin-bottom: 20px;
+  }
+  main .order_btn {
+    margin-left: -20px;
+  }
+
+  footer {
+    height: 150px;
+  }
+
+  /* main {
+      i {
+      font-size: 1.3rem;
+      margin-right: 15px;
+      align-self: flex-end;
+      position: absolute;
+      &:hover {
+          background: linear-gradient(to top,$color-secondary, $color-primary);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          font-weight: bold;
+              }
+  }
+  } */
 }
 header .meal {
   object-fit: cover;

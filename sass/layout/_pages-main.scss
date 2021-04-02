@@ -69,12 +69,26 @@ main {
                     margin-left: -5px;
                     font-size: 1rem;
 
-                    .checkmark, .checkmark2 {
+                    .checkmark {
                         display: flex;
                         justify-content: center;
                         align-items: center;
                         float: right;
-                        margin-right: -80px;
+                        margin-right: -15000px;
+                        margin-top: -50px;
+                        background-color: $color-tertiary;
+                        color: #fff;
+                        border-radius: 0px 15px 15px 0px;;
+                        height: 61px;
+                        width: 50px;
+                    }
+
+                    .checkmark2 {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        float: right;
+                        margin-right: -15000px;
                         margin-top: -50px;
                         background-color: $color-tertiary;
                         color: #fff;
@@ -117,6 +131,8 @@ main {
 
 
                 &:hover {
+                        box-shadow: $box-shadow;
+
                     overflow: visible;
                     .checkmark {
                         margin-right: -23px;

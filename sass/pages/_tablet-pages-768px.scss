@@ -13,13 +13,43 @@
     }
     
     main {
+        h1 {
+            margin-left: 150px;
+        }
+
+        h3 {
+            margin-left: 150px;
+        }
+
         .starter, .main, .dessert {
         display: flex;
         flex-direction: column;
+
+        ul {
+            padding: 0px 150px 0px 150px;
+            li {
+                &:hover {
+                    .susp, .suspension {
+                        display: none;
+                    }
+                    .name {
+                        overflow: visible;
+                        width: 300px;
+                    }
+                }
+            }
+        }
     }
+
     .btn-pages {
-        top: 30px;
-        left: 485px;
+        margin-right: 150px;
     }
+
+    .order_btn {
+        margin-left: 300px;
+    }
+
+    
+
     }
     }
