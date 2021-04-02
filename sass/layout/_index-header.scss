@@ -56,6 +56,7 @@ header p {
 
 .explorer_btn{
     @include purple-btn;
+    width: 150px;
     a{
         color:#fff;
         font-size: $medium;

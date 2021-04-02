@@ -1,8 +1,8 @@
 @keyframes slideleft {
-    0% {
+    from {
+        width: 0px;
     }
 
-    100% {
-        width: 100px;
+    to {
+        width: 50px;
     }
-}

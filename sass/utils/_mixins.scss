@@ -17,15 +17,13 @@
 @mixin purple-btn {
     margin-bottom: 30px;
     background: linear-gradient(to bottom,$color-secondary, $color-primary);
-    width: 180px;
     height: 40px;
     border-radius: 30px;
     text-align: center;
 }
 
 @mixin btn-style {
-        position: absolute;
-        background-color: #fff;
+        background-color: $bg-color;
         font-size: 1.3rem;
         border: none;
     }
