@@ -1,6 +1,10 @@
 @media screen and (min-width: map-get($breakpoints, tablet)) {
     body {
+        width: 768px;
         margin: auto;
+        .loader {
+            left: 320px
+        }
     }
     
     nav {

@@ -1,11 +1,59 @@
 /*HEADER*/
 
+body {
+    
+
+    .loader {
+        overflow: hidden;
+        position: absolute;
+        border: 16px solid #f3f3f3;
+        border-top: 16px solid $color-primary; 
+        border-radius: 50%;
+        left: 90px;
+        top: 370px;
+        width: 120px;
+        height: 120px;
+        animation: spin 1.1s linear 2 both;
+      }
+      
+      
+      @keyframes spin {
+        0% { transform: rotate(0deg); opacity: 100%;}
+        100% { transform: rotate(360deg); opacity: 0%;}
+      }
+}
+
 header{
     display: flex;
     flex-direction:column;
     align-items: center;
     background-color: $bg-color; 
     font-family: $text-typo;
+}
+
+
+.index {
+    margin: auto;
+    background-color: $bg-color;
+    animation: loader 3s;
+    
+    @keyframes loader {
+        0% {
+            opacity: 0%;
+        }
+
+        30% {
+            opacity: 0%;
+        }
+
+        60% {
+            opacity: 0%;
+        }
+
+        100% {
+            opacity: 100%;
+        }
+    }
 }
 
 .logo {

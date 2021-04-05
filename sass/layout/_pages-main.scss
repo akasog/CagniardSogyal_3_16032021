@@ -26,10 +26,30 @@ main {
     .btn-pages {
         background-color: $bg-color;
         float: right;
-        margin-top: -50px;
+        margin-top: -55px;
         @include btn-style;
-        &:focus {
-            @include btn-focus;
+        outline: none;
+        &:hover {
+            i {
+            background-color: #fff;
+            outline: none;
+            border: none;
+            background: linear-gradient(to top,$color-secondary, $color-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
+            animation: progr 400ms ease-in both;
+
+            @keyframes progr {
+                0% {
+                    opacity: 10%;
+                }
+
+                100% {
+                    opacity: 100%;
+                }
+            }
+        }
         }
     }
 
@@ -105,7 +125,8 @@ main {
                     font-size: $medium;
                     strong {
                         font-weight: $strong-text;
-                        margin-right: -10px
+                        margin-right: -10px;
+                        height: 20px;
                     }
                 }
 
@@ -118,7 +139,7 @@ main {
 
                 .susp {
                     overflow: hidden;
-                    margin-bottom: 1500px;
+                    margin-top: 1500px;
                     width: 10px;
                     height: 10px;
                 }
@@ -131,13 +152,14 @@ main {
 
 
                 &:hover {
-                        box-shadow: $box-shadow;
-
+                    box-shadow: $box-shadow;
                     overflow: visible;
+                    
                     .checkmark {
                         margin-right: -23px;
                         margin-top: -55px;
                         animation: slideleft 300ms both;
+                        animation-timing-function: ease-in-out;
 
                         i {
                             transform: rotate(360deg);
@@ -148,7 +170,8 @@ main {
                     .checkmark2 {
                         margin-right: -23px;
                         margin-top: -50px;
-                        animation: slideleft 300ms both;
+                        animation: slideleft 300ms;
+                        animation-timing-function: ease-in-out;
 
                         i {
                             transform: rotate(360deg);
