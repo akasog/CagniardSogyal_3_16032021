@@ -454,6 +454,9 @@ main .starter ul li button, main .main ul li button, main .dessert ul li button 
   margin-left: -5px;
   font-size: 1rem;
 }
+main .starter ul li button i, main .main ul li button i, main .dessert ul li button i {
+  font-size: 1.2rem;
+}
 main .starter ul li button .checkmark, main .main ul li button .checkmark, main .dessert ul li button .checkmark {
   display: flex;
   justify-content: center;
@@ -921,12 +924,10 @@ main .dessert li {
     margin-bottom: -10px;
   }
   main ul li i {
-    font-size: 1em;
-    margin-left: 15px;
-    margin-bottom: 25px;
+    margin: 0px 0px 20px 0px;
   }
   main .order_btn {
-    margin-left: -20px;
+    margin-left: 10px;
   }
 
   footer {
@@ -935,21 +936,6 @@ main .dessert li {
   footer h3 {
     margin-bottom: 30px;
   }
-
-  /* main {
-      i {
-      font-size: 1.3rem;
-      margin-right: 15px;
-      align-self: flex-end;
-      position: absolute;
-      &:hover {
-          background: linear-gradient(to top,$color-secondary, $color-primary);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          font-weight: bold;
-              }
-  }
-  } */
 }
 header .meal {
   object-fit: cover;
