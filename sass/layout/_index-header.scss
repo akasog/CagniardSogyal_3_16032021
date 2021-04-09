@@ -1,7 +1,7 @@
 /*HEADER*/
 
 body {
-    
+    width: 320px;
 
     .loader {
         overflow: hidden;
@@ -59,6 +59,7 @@ header{
 .logo {
         @include logo_position;
         &__img {
+            margin-left: 10px;
             width: 130px;
         }
     }

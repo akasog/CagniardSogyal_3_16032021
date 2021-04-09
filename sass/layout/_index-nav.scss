@@ -19,13 +19,15 @@ nav {
             text-align: center;
             line-height: 60px;
             border-radius: $border-radius;
+            background-color: lighten($color: $bg-search, $amount: 5);
             box-shadow: 0px 2px 10px $box-shadow;
             font-size: $medium;
             font-weight: $strong-text;
         }
     
         li:hover {
-            background-color: $bg-search;
+            background-color: lighten($color: $color-primary, $amount: 35);
+            box-shadow: 0px 4px 14px $box-shadow;
             label {
                 color: $color-primary;
                 opacity: 100%;
