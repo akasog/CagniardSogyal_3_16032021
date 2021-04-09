@@ -1,0 +1,25 @@
+footer {
+    font-family: $text-typo;
+    background-color: $bg-footer;
+    color: #fff;
+    height: 140px;
+    padding: 20px 0px 0px 20px;
+    h3{
+        font-family: $logo-typo;
+        margin-bottom: 15px;
+    }
+
+    li{
+        font-size: $medium;
+        margin-bottom: 12px;
+        i {
+            font-size: $small;
+            margin-right: 10px;
+        }
+    }
+
+    a {
+        color: #FFF;
+        text-decoration: none;
+    }
+}

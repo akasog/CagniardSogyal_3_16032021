@@ -1,0 +1,39 @@
+@mixin logo_position {
+    text-align: center;
+    margin: 10px 0px 10px 0px;
+}
+
+@mixin h2-style {
+    font-weight: 800;
+    font-size: $large;
+    margin: 30px 0px 20px 20px;
+}
+
+@mixin flexcolumn {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin purple-btn {
+    margin-bottom: 30px;
+    background: linear-gradient(to bottom,$color-secondary, $color-primary);
+    height: 40px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+@mixin btn-style {
+        background-color: $bg-color;
+        font-size: 1.3rem;
+        border: none;
+    }
+
+@mixin btn-focus {
+    background-color: #fff;
+    outline: none;
+    border: none;
+    background: linear-gradient(to top,$color-secondary, $color-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    }

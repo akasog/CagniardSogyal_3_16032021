@@ -1,0 +1,55 @@
+@media screen and (min-width: map-get($breakpoints, tablet)) {
+
+    header {
+        .meal {
+            width: 768px;
+        }
+        .return_arrow { 
+        }
+        .return_arrow {
+            position: absolute;
+            left: -280px;
+        }
+    }
+    
+    main {
+        h1 {
+            margin-left: 150px;
+        }
+
+        h3 {
+            margin-left: 150px;
+        }
+
+        .starter, .main, .dessert {
+        display: flex;
+        flex-direction: column;
+
+        ul {
+            padding: 0px 150px 0px 150px;
+            li {
+                &:hover {
+                    .susp, .suspension {
+                        display: none;
+                    }
+                    .name {
+                        overflow: visible;
+                        width: 300px;
+                    }
+                }
+            }
+        }
+    }
+
+    .btn-pages {
+        margin-right: 150px;
+    }
+
+    .order_btn {
+        margin-left: 300px;
+    }
+
+    
+
+    }
+    }
