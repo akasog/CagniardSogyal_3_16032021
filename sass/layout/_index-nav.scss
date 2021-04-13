@@ -4,6 +4,7 @@ nav {
     
     h2{                        
         @include h2-style;
+        margin-left: 15px;
     }
     
     
