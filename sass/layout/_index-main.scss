@@ -9,9 +9,14 @@ main {
     align-items: center;
     padding: 0px 15px 0px 15px;
     
+    section {
+        margin-top: 40px;
+    }
+
     h2{
         @include h2-style;
         margin-left: 0px;
+        padding-top: 30px;
     }
 
     div {
@@ -27,7 +32,7 @@ main {
         width: 60px;
         height: 20px;
         left: 230px;
-        top: 50px;
+        top: 80px;
         font-size: $new-size;
         font-weight: $strong-text;
         color: darken($color: $color-tertiary, $amount: 35);
@@ -36,7 +41,7 @@ main {
 
     .new2 {
         left: 230px;
-        top: 295px;
+        top: 325px;
     }
 
     img {
@@ -74,7 +79,7 @@ main {
         outline: none;
         position: absolute;
         background-color: #fff;
-        top: 220px;
+        top: 245px;
         left: 250px;
         &:hover {
             i {
@@ -104,14 +109,14 @@ main {
         }
     }
     .btn2 {
-        top: 465px;
+        top: 490px;
     }
 
     .btn3 {
-        top: 705px;
+        top: 730px;
     }
 
     .btn4 {
-        top: 950px;
+        top: 975px;
     }
 }

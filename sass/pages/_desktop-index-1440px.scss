@@ -20,11 +20,13 @@
         align-items: center;
         margin-bottom: 40px;
         h2 {
+            background-color: $bg-color;
             margin-bottom: 30px;
-            margin-left: 0px;
+            margin-right: 320px;
         }
         
         ul {
+            background-color: $bg-color;
             width: 1000px;
             margin-left: -70px;
         }
@@ -38,7 +40,7 @@
         section {
 
             h2 {
-                
+                top: -70px;
             }
 
             div {
@@ -74,7 +76,7 @@
                 font-size: 0.9rem;
                 line-height: 30px;
                 left: 570px;
-                top: 30px;
+                top: 70px;
             }
 
             .new2 {
@@ -83,7 +85,7 @@
                 font-size: 0.9rem;
                 line-height: 30px;
                 left: 1130px;
-                top: 30px;
+                top: 70px;
             }
 
             i {
@@ -100,22 +102,22 @@
     }
 
             .btn1 {
-                top: 310px;
+                top: 350px;
                 left: 600px
             }
 
             .btn2 {
-                top: 310px;
+                top: 350px;
                 left: 1170px
             }
 
             .btn3 {
-                top: 720px;
+                top: 760px;
                 left: 600px;
             }
 
             .btn4 {
-                top: 720px;
+                top: 760px;
                 left: 1170px
             }
         }
